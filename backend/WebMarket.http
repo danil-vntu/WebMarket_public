@@ -1,0 +1,6 @@
+@WebMarket_HostAddress = http://localhost:5176
+
+GET {{WebMarket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
