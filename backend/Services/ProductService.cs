@@ -128,6 +128,7 @@ namespace WebMarket.Services
                 };
             }
             var product = _context.Products.FirstOrDefault(p => p.Id == id);
+            
             if (product == null)
             {
                 return new ResultDto

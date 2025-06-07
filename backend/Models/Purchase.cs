@@ -10,9 +10,9 @@ namespace WebMarket.Models
         public int Quantity { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime PurchaseDate { get; set; }
-        public string LicenseKey { get; set; }
+        public string LicenseKey { get; set; } = default!;
 
         // Навігаційна властивість для зв’язку з продуктом
-        public Product Product { get; set; }
+        public Product Product { get; set; } = default!;
     }
 }

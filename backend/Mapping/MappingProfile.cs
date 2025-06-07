@@ -17,8 +17,6 @@ namespace WebMarket.Mapping
                 .ForMember(dest => dest.ImageUrl, opt => opt.MapFrom(src => src.Product.ImageUrl))
                 .ForMember(dest => dest.OldPrice, opt => opt.MapFrom(src => src.Product.OldPrice));
             CreateMap<User, UserDto>();
-
-
         }
     }
 }
